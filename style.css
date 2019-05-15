@@ -3,5 +3,66 @@ text{color: #3C62C0;
     font-size: 15px;
 }
 body {
-    background-color: ;
+    background-color: lightblue ;
 }
+
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+/* Logo Characteristics */
+
+#music_icon {
+    width:70px;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    left: 103px;
+    top: -3px;
+}
+
+/* --------- */
+
+/*     Search Inputs and Buttons     */
+#searchTerm {
+   position: fixed; 
+   top: 600px;
+   left: 519px;
+}
+
+#searchButton {
+    position: fixed;
+    top: 590px;
+    left: 720px;
+}
+
+/* --------- */    
+
+/* Button Style */
+
+.button {
+	background-color:#768d87;
+	border:2px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	padding:6px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.button:hover {
+	background-color:#6c7c7c;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+ 
+/* --------- */
