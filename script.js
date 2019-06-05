@@ -11,26 +11,27 @@ $.ajax({
         $("searchButton").click(function() {
           var searchTerm = $("#searchTerm").val();
           var giphyUrl =" https://api.soundcloud.com/tracks?q=beyonce&client_id=5aa8e389ba4e24b6106af5159ab3e344";
+          
+          let trackInput = document.getElementById(‘trackInput’);
+          let submitButton = document.getElementById(‘submitButton’); 
+          
+          submitButton.onclick = searchTracks;
             
-            $.ajax({
-             url: giphyUrl,
-             method: "GET",
-             success: function(response) {
-                  var imageSrc =response[1].user.permalink_url;
-                 console.log(response);
-                 
-                 var imageHtml= "<imgsrc= " + imageSrc + "/>"
-                 
-                 
-             }}
-                
-                
-                
-                
-            );
-            
-            
-        }); 
+          function searchTracks() {
+             let searchResults = trackInput.value;    
+          }
+          
+          response.json().then(function(data) {
+          let track = data;
+          console.log(track);
+          
+          function renderTracks() {
+
+           
+             
+              
+          }
+        }
     }
-    
 });
+       
